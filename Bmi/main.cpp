@@ -1,10 +1,8 @@
 #include <iostream>
 #include <math.h>
+#include "main.h"
 
 // Exercise 2.4.
-
-const double MAX_BMI {24.9};
-const double MIN_BMI {18.5};
 
 
 int main()
@@ -12,14 +10,14 @@ int main()
     std::cout << "Enter the weight in kilograms: ";
     double weight {};
     std::cin >> weight;
-    std::cout << "Enter the height in metres: ";
+    std::cout << "Enter the height in meters: ";
     double height {};
     std::cin >> height;
-
+    
     double bmi {weight/(height*height)};
     double bmi_rounded {round(bmi*10)/10};
 
-    std::cout << "Bmi: " << bmi_rounded << " alkuperäinen: " << bmi << std::endl;
+    std::cout << "Bmi: " << bmi_rounded <<  std::endl;
 
     if(bmi > MAX_BMI)
     {

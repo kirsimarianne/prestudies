@@ -1,7 +1,6 @@
+#include <iostream>
 
 // Exercise 2.3.
-
-#include <iostream>
 
 int main()
 {
